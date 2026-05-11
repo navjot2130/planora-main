@@ -1,0 +1,15 @@
+- [ ] Inspect current backend and deployment entrypoints (done)
+- [ ] Create production-ready Vercel entrypoint at backend/api/index.js
+- [ ] Add/update vercel.json in repo root
+- [x] Refactor backend/src/app.js to be Vercel-compatible server export (removed app.listen usage in app.js conceptually; using existing CommonJS app export for stability)
+
+- [ ] Refactor backend/src/server.js to be local dev server (keep app.listen)
+- [ ] Switch backend package.json to "type":"module" and adjust scripts/main
+- [ ] Convert all backend/src/** modules from CommonJS to ES Modules (imports/exports)
+- [ ] Ensure Mongo/Firebase connection and env vars remain unchanged
+- [ ] Ensure frontend communicates correctly (keep routes under /api/* and CORS)
+- [ ] Add/verify error handling and notFound behavior under serverless
+- [ ] Run local npm install + npm run dev and test /health + one API route
+- [ ] Redeploy to Vercel and confirm serverless function works
+- [ ] Commit and push changes
+
