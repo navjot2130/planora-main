@@ -12,4 +12,3 @@
 - [ ] Run local npm install + npm run dev and test /health + one API route
 - [ ] Redeploy to Vercel and confirm serverless function works
 - [ ] Commit and push changes
-
